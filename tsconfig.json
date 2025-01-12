@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": ".",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@db/*": ["db/*"],
+      "@config": ["config"],
+      "@interfaces/*": ["interfaces/*"],
+      "@resolvers/*": ["resolvers/*"],
+      "@schemas/*": ["schemas/*"],
+      "@utils/*": ["utils/*"],
+      "@modules/*": ["modules/*"]
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "codegen.ts", "drizzle.config.ts", "vite.config.ts"]
+}
